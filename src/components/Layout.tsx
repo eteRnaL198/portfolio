@@ -8,7 +8,7 @@ type Props = {
 }
 
 const Layout = ({ children, title }: Props) => (
-  <div>
+  <div className="flex flex-col h-full">
     <Head>
       <title>{title}</title>
       <meta charSet="utf-8" />
@@ -20,11 +20,11 @@ const Layout = ({ children, title }: Props) => (
         <Link href="/">
           <a>Home</a>
         </Link>
+        <Link href="/profile">
+          <a>Profile</a>
+        </Link>
         <Link href="/skills">
           <a>Skills</a>
-        </Link>
-        <Link href="/about">
-          <a>About</a>
         </Link>
         <Link href="/users">
           <a>Users List</a>
@@ -32,9 +32,11 @@ const Layout = ({ children, title }: Props) => (
         <a href="/api/users">Users API</a>
       </nav>
     </header>
-    {children}
-    <footer>
-      <small>&copy; 2021 eteRnaL198</small>
+    <main className="flex-1">
+      {children}
+    </main>
+    <footer className="bg-gray-800 flex justify-center">
+      <small className="p-1 text-white text-xs">&copy; 2021 Ikuya Nagaki</small>
     </footer>
   </div>
 )

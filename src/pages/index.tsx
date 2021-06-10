@@ -4,8 +4,8 @@ import Layout from '../components/Layout'
 const IndexPage = () => (
   <Layout title="Home | Next.js + TypeScript Example">
     <p>
-      <Link href="/about">
-        <a>About</a>
+      <Link href="/profile">
+        <a>Profile</a>
       </Link>
     </p>
   </Layout>
