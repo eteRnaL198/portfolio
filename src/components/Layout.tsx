@@ -13,6 +13,7 @@ const Layout = ({ children, title }: Props) => (
       <title>{title}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <link rel="icon" href="/f_f_business_6_svg_f_business_6_1nbg.svg" />
     </Head>
     <header>
       <nav>
