@@ -26,10 +26,9 @@ const Layout = ({ children, title }: Props) => (
         <Link href="/skills">
           <a>Skills</a>
         </Link>
-        <Link href="/users">
-          <a>Users List</a>
+        <Link href="/works">
+          <a>Works</a>
         </Link>
-        <a href="/api/users">Users API</a>
       </nav>
     </header>
     <main className="flex-1">

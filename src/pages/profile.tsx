@@ -3,7 +3,7 @@ import Layout from '../components/Layout'
 
 const Profile: NextPage = () => {
   return (
-    <Layout title="Portfolio | profile">
+    <Layout title="Portfolio | Profile">
       <div>
         <h1>Profile</h1>
         <p>永木 郁也</p>
