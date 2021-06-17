@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Layout from '../components/Layout'
 
 const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
+  <Layout title="Portfolio | Home">
     <div className="flex mx-auto w-11/12">
       <div className="flex flex-col h-full items-center justify-center leading-loose tracking-wide text-3xl w-full">
         <p className=""

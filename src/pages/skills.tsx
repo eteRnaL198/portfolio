@@ -3,7 +3,7 @@ import Layout from '../components/Layout'
 
 const SkillsPage: NextPage = () => {
   return (
-    <Layout title="Portfolio | skills">
+    <Layout title="Portfolio | Skills">
       <div className="mx-auto py-7 w-11/12">
         <h1 className="font-bold text-4xl text-center tracking-wider mb-7"
         >Skills</h1>
