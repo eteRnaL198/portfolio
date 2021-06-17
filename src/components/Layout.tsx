@@ -8,27 +8,29 @@ type Props = {
 }
 
 const Layout = ({ children, title }: Props) => (
-  <div className="flex flex-col h-full">
+  <div className="flex flex-col h-full bg-blue-100">
     <Head>
       <title>{title}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <link rel="icon" href="/f_f_business_6_svg_f_business_6_1nbg.svg" />
     </Head>
-    <header>
-      <nav>
+    <header className="bg-white py-4 rounded-b-2xl shadow-md">
+      <nav className="flex font-bold justify-between mx-auto text-2xl w-11/12">
         <Link href="/">
-          <a>Home</a>
+          <a>Portfolio</a>
         </Link>
-        <Link href="/profile">
-          <a>Profile</a>
-        </Link>
-        <Link href="/skills">
-          <a>Skills</a>
-        </Link>
-        <Link href="/works">
-          <a>Works</a>
-        </Link>
+        <div className="flex justify-between">
+          <Link href="/profile">
+            <a className="ml-10">Profile</a>
+          </Link>
+          <Link href="/skills">
+            <a className="ml-10">Skills</a>
+          </Link>
+          <Link href="/works">
+            <a className="ml-10">Works</a>
+          </Link>
+        </div>
       </nav>
     </header>
     <main className="flex-1">
