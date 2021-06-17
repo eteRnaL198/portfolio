@@ -10,44 +10,54 @@ const Works: NextPage = () => {
         >Works</h1>
         <div className="grid gap-10">
           <div className="flex justify-between">
-            <img src="/images/wordchaintalker.jpg" alt="" className="h-72 shadow-md"/>
-            <div className="bg-white flex flex-col flex-grow ml-8 p-10 rounded-3xl">
-              <h2 className="mb-3 text-2xl tracking-wider"
+            <img src="/images/wordchaintalker.jpg" alt="" className="h-80 shadow-md"/>
+            <div className="bg-white flex flex-col flex-grow ml-8 p-10 rounded-3xl shadow-md">
+              <h2 className="font-bold mb-1 text-2xl tracking-wider"
               >Word Chain Talker</h2>
-              <p>ボットと尻取りができるアプリです。</p>
-              <p>名前によってユーザーを管理しているため、名前を入力するだけでゲームを始められます。</p>
-              <p>ランキング機能を実装しました。</p>
-              <p>React TypeScript TailwindCSS Firebase</p>
+              <div className="text-lg">
+                <p>ボットと尻取りができるアプリです。</p>
+                <p>名前によってユーザーを管理しているため、名前を入力するだけでゲームを始められます。</p>
+                <p>ランキング機能を実装しました。</p>
+                <p>使用した技術は以下になります。</p>
+                <p className="font-bold tracking-wide"
+                >React TypeScript TailwindCSS Firebase</p>
+              </div>
               <div className="flex flex-grow items-end justify-center w-full">
-                <a href="" className="bg-blue-400 leading-normal mt-4 px-8 rounded-2xl shadow-md tracking-wider text-2xl text-white hover:bg-blue-300 hover:shadow-sm focus:bg-blue-300 focus:shadow-sm"
+                <a href="https://wordchaingame-3e0fc.web.app/" className="bg-blue-400 font-bold leading-normal px-8 rounded-2xl shadow-md tracking-wider text-2xl text-white hover:bg-blue-300 hover:shadow-sm focus:bg-blue-300 focus:shadow-sm"
                 >VISIT</a>
               </div>
             </div>
           </div>
           <div className="flex flex-row-reverse justify-between">
-            <img src="/images/portfolio.png" alt="" className="h-72 shadow-md"/>
-            <div className="bg-white flex flex-col flex-grow mr-8 p-10 rounded-3xl">
-              <h2 className="mb-3 text-2xl tracking-wider"
+            <img src="/images/portfolio.png" alt="" className="h-80 shadow-md"/>
+            <div className="bg-white flex flex-col flex-grow mr-8 p-10 rounded-3xl shadow-md">
+              <h2 className="font-bold mb-1 text-2xl tracking-wider"
               >Portfolio</h2>
-              <p>現在ご覧になっているサイトです。</p>
-              <p>Next.js TypeScript TailwindCSS</p>
+              <div className="text-lg">
+                <p>現在ご覧になっているサイトです。</p>
+                <p>使用した技術は以下になります。</p>
+                <p className="font-bold tracking-wide"
+                >Next.js TypeScript TailwindCSS</p>
+              </div>
               <div className="flex flex-grow items-end justify-center w-full">
                 <Link href="/">
-                  <a href="" className="bg-blue-400 leading-normal mt-4 px-8 rounded-2xl shadow-md tracking-wider text-2xl text-white hover:bg-blue-300 hover:shadow-sm focus:bg-blue-300 focus:shadow-sm"
+                  <a className="bg-blue-400 font-bold leading-normal px-8 rounded-2xl shadow-md tracking-wider text-2xl text-white hover:bg-blue-300 hover:shadow-sm focus:bg-blue-300 focus:shadow-sm"
                   >VISIT</a>
                 </Link>
               </div>
             </div>
           </div>
           <div className="flex  justify-between">
-            <img src="/images/portfolio.png" alt="" className="h-72 shadow-md"/>
-            <div className="bg-white flex flex-col flex-grow ml-8 p-10 rounded-3xl">
-              <h2 className="mb-3 text-2xl tracking-wider"
+            <img src="/images/devhall.png" alt="" className="h-80 shadow-md"/>
+            <div className="bg-white flex flex-col flex-grow ml-8 p-10 rounded-3xl shadow-md">
+              <h2 className="font-bold mb-1 text-2xl tracking-wider"
               >Dev Hall</h2>
-              <p>駆け出しエンジニア同士で共同開発をする時の手助けをするアプリです。</p>
+              <div className="text-lg">
+                <p>駆け出しエンジニア同士で共同開発をする時の手助けをするアプリです。</p>
+              </div>
               <div className="flex flex-grow items-end justify-center w-full">
-                <p className="bg-gray-400 leading-normal mt-4 px-8 rounded-2xl shadow-md text-center text-2xl text-white "
-                >Under development...</p>
+                <p className="bg-gray-400 font-bold leading-normal px-8 rounded-2xl shadow-md text-center text-2xl text-white "
+                >Under Development...</p>
               </div>
             </div>
           </div>
