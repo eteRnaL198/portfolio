@@ -4,10 +4,10 @@ import Layout from '../components/Layout'
 const SkillsPage: NextPage = () => {
   return (
     <Layout title="Portfolio | Skills">
-      <div className="mx-auto py-7 w-11/12">
+      <div className="mx-auto py-7 w-11/12 max-w-screen-lg">
         <h1 className="font-bold text-4xl text-center tracking-wider mb-7"
         >Skills</h1>
-        <div className="grid grid-cols-3 gap-8 text-xl tracking-wider">
+        <div className="grid grid-cols-2 gap-8 text-xl tracking-wider sm:grid-cols-3">
           <div className="bg-white flex flex-col items-center p-7 rounded-3xl shadow-md w-full">
             <img src="/images/html-5.svg" alt="" className="mb-4 h-20" />
             <p className="text-center text-bold"

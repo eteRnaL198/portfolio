@@ -9,8 +9,7 @@ type Props = {
 
 const Layout = ({ children, title }: Props) => {
   const navs = [
-    { name: "Profile", link: "/"},
-    { name: "Portfolio", link: "/portfolio"},
+    { name: "Profile", link: "/profile"},
     { name: "Skills", link: "/skills"},
     { name: "Works", link: "/works"},
   ];
@@ -24,13 +23,18 @@ const Layout = ({ children, title }: Props) => {
         <link rel="icon" href="/f_f_business_6_svg_f_business_6_1nbg.svg" />
       </Head>
       <header className="bg-white py-4 rounded-b-2xl shadow-md sticky top-0 w-full">
-        <nav className="flex font-bold justify-between mx-auto text-2xl w-11/12">
-          {navs.map((nav, idx) => (
-            <Link href={nav.link} key={idx}>
-              <a className=" hover:text-gray-500"
-              >{nav.name}</a>
-            </Link>
-          ))}
+        <nav className="flex font-bold justify-between mx-auto text-lg w-11/12 max-w-screen-lg sm:text-2xl">
+          <Link href="/">
+            <a className="hover:text-gray-500">Portfolio</a>
+          </Link>
+          <div>
+            {navs.map((nav, idx) => (
+              <Link href={nav.link} key={idx}>
+                <a className=" ml-3 hover:text-gray-500 sm:ml-7"
+                >{nav.name}</a>
+              </Link>
+            ))}
+          </div>
         </nav>
       </header>
       <main className="flex flex-1">
