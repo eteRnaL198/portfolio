@@ -35,12 +35,6 @@ const Profile: NextPage = () => {
             </div>
             <div className="flex">
               <a
-                href="https://twitter.com/programikuya"
-                className="hover:opacity-70 mr-4"
-              >
-                <img src="/images/twitter.svg" alt="" className="h-9" />
-              </a>
-              <a
                 href="https://github.com/eteRnaL198"
                 className="hover:opacity-70"
               >

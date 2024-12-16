@@ -11,11 +11,35 @@ const Works: NextPage = () => {
         </h1>
         <div className="grid gap-10">
           <div className="grid gap-5 items-center sm:grid-cols-2">
+            <img src="/images/comeel.jpg" alt="" className="shadow-md" />
+            <div className="bg-white flex flex-col flex-grow p-10 rounded-3xl shadow-md w-full">
+              <h2 className="font-bold mb-1 text-2xl tracking-wider">
+                こみ〜る
+              </h2>
+              <div className="text-lg">
+                <p>こども食堂の支援を促すサービスです｡</p>
+                <p>使用した技術は以下です。</p>
+                <p className="font-bold tracking-wide">
+                  React, TypeScript, TailwindCSS, Firebase
+                </p>
+              </div>
+              <div className="flex flex-grow items-end justify-center mt-3 w-full">
+                <a
+                  href="https://comeel.web.app/"
+                  className="bg-blue-400 font-bold leading-normal px-8 rounded-2xl shadow-md text-center text-2xl text-white "
+                >
+                  VISIT
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="grid gap-5 items-center sm:grid-cols-2">
             <img
               src="/images/wordchaintalker.jpg"
               alt=""
               className="shadow-md w-3/5 mx-auto"
             />
+
             <div className="bg-white flex flex-col flex-grow p-10 rounded-3xl shadow-md w-full">
               <h2 className="font-bold mb-1 text-xl tracking-wider sm:text-2xl">
                 Word Chain Talker
@@ -61,29 +85,6 @@ const Works: NextPage = () => {
                     VISIT
                   </a>
                 </Link>
-              </div>
-            </div>
-          </div>
-          <div className="grid gap-5 items-center sm:grid-cols-2">
-            <img src="/images/comeel.jpg" alt="" className="shadow-md" />
-            <div className="bg-white flex flex-col flex-grow p-10 rounded-3xl shadow-md w-full">
-              <h2 className="font-bold mb-1 text-2xl tracking-wider">
-                こみ〜る
-              </h2>
-              <div className="text-lg">
-                <p>こども食堂の支援を促すサービスです｡</p>
-                <p>使用した技術は以下です。</p>
-                <p className="font-bold tracking-wide">
-                  React, TypeScript, TailwindCSS, Firebase
-                </p>
-              </div>
-              <div className="flex flex-grow items-end justify-center mt-3 w-full">
-                <a
-                  href="https://comeel.web.app/"
-                  className="bg-blue-400 font-bold leading-normal px-8 rounded-2xl shadow-md text-center text-2xl text-white "
-                >
-                  VISIT
-                </a>
               </div>
             </div>
           </div>

@@ -1,17 +1,17 @@
-import React, { ReactNode } from 'react'
-import Link from 'next/link'
-import Head from 'next/head'
+import React, { ReactNode } from "react";
+import Link from "next/link";
+import Head from "next/head";
 
 type Props = {
-  children?: ReactNode
-  title?: string
-}
+  children?: ReactNode;
+  title?: string;
+};
 
 const Layout = ({ children, title }: Props) => {
   const navs = [
-    { name: "Profile", link: "/profile"},
-    { name: "Skills", link: "/skills"},
-    { name: "Works", link: "/works"},
+    { name: "Profile", link: "/profile" },
+    { name: "Skills", link: "/skills" },
+    { name: "Works", link: "/works" },
   ];
 
   return (
@@ -30,21 +30,20 @@ const Layout = ({ children, title }: Props) => {
           <div>
             {navs.map((nav, idx) => (
               <Link href={nav.link} key={idx}>
-                <a className=" ml-3 hover:text-gray-500 sm:ml-7"
-                >{nav.name}</a>
+                <a className=" ml-3 hover:text-gray-500 sm:ml-7">{nav.name}</a>
               </Link>
             ))}
           </div>
         </nav>
       </header>
-      <main className="flex flex-1">
-        {children}
-      </main>
+      <main className="flex flex-1">{children}</main>
       <footer className="bg-gray-800 flex justify-center">
-        <small className="p-1 text-white text-xs">&copy; 2021 Ikuya Nagaki</small>
+        <small className="p-1 text-white text-xs">
+          &copy; 2024 Ikuya Nagaki
+        </small>
       </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
